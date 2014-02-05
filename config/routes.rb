@@ -1,6 +1,7 @@
 Sorcery::Application.routes.draw do
-  get "registrations/new"
-  get "registrations/edit"
+
+  resource :registrations
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
