@@ -13,6 +13,11 @@ class SessionsController < ApplicationController
     end
   end
 
+  def destroy
+    logout
+    redirect_to new_sessions_path, notice: "you've logged out."
+  end
+
   private
 
   def params_user
